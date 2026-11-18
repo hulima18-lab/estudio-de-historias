@@ -3,94 +3,80 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Termos do Estúdio de Histórias</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Source+Sans+3:wght@400;600&display=swap">
+<link rel="icon" type="image/svg+xml" href="icon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="icon.png">
+<title>Estúdio de Histórias</title>
+<meta name="description" content="Estúdio de Histórias: ferramenta que produz vídeos curtos de histórias narradas para os canais Conta essa, Capuz! e Hermes na Voz.">
 <style>
-/* Layout: documento legal de coluna única, índice no topo, seções Termos e Privacidade com versão em inglês */
-:root{
-  --bg:#faf8fc; --fg:#221a2e; --muted:#5e5470; --line:#e2dcea; --accent:#5a2fa0; --chip:#efe8f8;
-  --display:"Fraunces",Georgia,serif; --body:"Source Sans 3",system-ui,-apple-system,sans-serif;
-}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17131d;--fg:#ece6f4;--muted:#a79cb8;--line:#2f283a;--accent:#c4a6f2;--chip:#241d2e;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#17131d;--fg:#ece6f4;--muted:#a79cb8;--line:#2f283a;--accent:#c4a6f2;--chip:#241d2e;color-scheme:dark}
-body{background:var(--bg);color:var(--fg);font:17px/1.65 var(--body)}
-.wrap{max-width:46rem;margin:0 auto;padding-block:48px 72px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-header{display:grid;gap:10px;padding-bottom:28px;border-bottom:1px solid var(--line)}
-.marca{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
-h1{font:600 clamp(30px,6vw,42px)/1.15 var(--display);margin:0;text-wrap:balance}
-nav{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
-nav a{background:var(--chip);color:var(--accent);text-decoration:none;font-weight:600;padding:6px 14px;border-radius:999px;font-size:15px}
-nav a:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-section{padding-top:36px;scroll-margin-top:16px}
-h2{font:600 28px/1.2 var(--display);margin:0 0 4px}
-.data{color:var(--muted);font-size:14px;margin:0 0 18px}
-h3{font-size:17px;font-weight:600;margin:24px 0 4px}
-p,li{margin:0 0 10px;max-width:65ch}
-ul{padding-left:1.2em;margin:0 0 10px}
-.en{margin-top:28px;padding-top:18px;border-top:1px dashed var(--line);color:var(--muted);font-size:15.5px}
-.en h3{color:var(--fg)}
-hr{border:0;border-top:1px solid var(--line);margin:44px 0 0}
+:root{--bg:#faf8fc;--fg:#221a2e;--muted:#5e5470;--line:#e2dcea;--accent:#5a2fa0;--chip:#efe8f8;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#17131d;--fg:#ece6f4;--muted:#a79cb8;--line:#2f283a;--accent:#c4a6f2;--chip:#241d2e;--card:#1f1928}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:52rem;margin:0 auto;padding:0 max(16px,env(safe-area-inset-left,0px))}
+header.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:20px 0;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;font-size:19px}
+.brand img{width:40px;height:40px;border-radius:10px}
+nav a{color:var(--accent);text-decoration:none;font-weight:600;margin-left:16px;font-size:15px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.hero{padding:56px 0 36px}
+h1{font-size:clamp(32px,6vw,48px);line-height:1.15;margin:0 0 14px;text-wrap:balance}
+.lead{font-size:19px;color:var(--muted);max-width:40rem;margin:0}
+h2{font-size:24px;margin:44px 0 14px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.card h3{margin:0 0 6px;font-size:18px}
+.card p{margin:0;color:var(--muted);font-size:16px}
+ol{padding-left:1.3em;max-width:44rem}li{margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips span{background:var(--chip);color:var(--accent);font-weight:600;padding:6px 14px;border-radius:999px;font-size:15px}
+footer{margin-top:56px;padding:24px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
+footer a{color:var(--accent)}
 </style>
 </head>
 <body>
-
 <div class="wrap">
-<header>
-  <div class="marca">Estúdio de Histórias</div>
-  <h1>Termos de Uso e Política de Privacidade</h1>
-  <nav aria-label="Seções"><a href="#termos">Termos de Uso</a><a href="#privacidade">Política de Privacidade</a></nav>
+<header class="top">
+  <div class="brand"><img src="icon.png" alt="Ícone do Estúdio de Histórias" width="40" height="40"> Estúdio de Histórias</div>
+  <nav aria-label="Principal"><a href="#como-funciona">Como funciona</a><a href="termos.html#termos">Termos</a><a href="termos.html#privacidade">Privacidade</a></nav>
 </header>
 
-<section id="termos">
-  <h2>Termos de Uso</h2>
-  <p class="data">Última atualização: 5 de novembro de 2026</p>
-  <h3>O que é o Estúdio de Histórias</h3>
-  <p>O Estúdio de Histórias é uma ferramenta pessoal, de uso interno, que produz vídeos curtos de histórias narradas e publica esses vídeos nas contas de TikTok e YouTube que pertencem ao próprio desenvolvedor: os canais “Conta essa, Capuz!” e “Hermes na Voz”.</p>
-  <h3>Quem pode usar</h3>
-  <p>O app não é oferecido ao público. Só as contas do próprio desenvolvedor são conectadas a ele. Ninguém mais cria conta, faz login ou publica conteúdo pelo app.</p>
-  <h3>Uso do TikTok</h3>
-  <ul>
-    <li>O app usa o Login Kit e a Content Posting API do TikTok apenas para publicar vídeos nas contas do desenvolvedor, depois que ele autoriza cada conta.</li>
-    <li>Cada publicação segue as Diretrizes da Comunidade e os Termos de Serviço do TikTok. O app respeita as opções de privacidade escolhidas para cada vídeo.</li>
-    <li>O acesso pode ser revogado a qualquer momento nas configurações do TikTok, em “Segurança” → “Apps e serviços”.</li>
-  </ul>
-  <h3>Conteúdo</h3>
-  <p>Os vídeos são histórias narradas com voz sintética sobre imagens de fundo. O desenvolvedor é o responsável pelo conteúdo publicado e marca o conteúdo gerado por IA quando a plataforma pedir.</p>
-  <h3>Garantias e mudanças</h3>
-  <p>O app é fornecido como está, sem garantias. Estes termos podem mudar; a data no topo mostra a versão em vigor.</p>
+<main>
+<section class="hero">
+  <h1>Histórias narradas, em vídeos curtos.</h1>
+  <p class="lead">O Estúdio de Histórias é uma ferramenta que transforma histórias escritas em vídeos curtos com narração e imagens, prontos para publicar no TikTok e no YouTube.</p>
+</section>
 
-  <div class="en" lang="en">
-    <h3>Terms of Service (English)</h3>
-    <p>Estúdio de Histórias is a private, internal tool that produces short narrated story videos and publishes them only to TikTok and YouTube accounts owned by the developer (“Conta essa, Capuz!” and “Hermes na Voz”). It is not offered to the public, and no third-party users sign in or post through it. It uses TikTok Login Kit and the Content Posting API solely to post the developer's own videos after the developer authorizes each account, complying with TikTok's Terms of Service and Community Guidelines and honoring each post's privacy settings. Access can be revoked at any time in TikTok settings. The software is provided as is, and these terms may be updated; the date above shows the current version.</p>
+<section id="canais">
+  <h2>Canais</h2>
+  <div class="chips"><span>Conta essa, Capuz!</span><span>Hermes na Voz</span></div>
+  <p style="color:var(--muted);max-width:40rem;margin-top:14px">Os vídeos são publicados apenas nos canais acima, que pertencem ao próprio desenvolvedor do app.</p>
+</section>
+
+<section id="como-funciona">
+  <h2>Como funciona</h2>
+  <div class="grid">
+    <div class="card"><h3>1. Escrever</h3><p>Uma história curta é escrita e revisada antes de virar vídeo.</p></div>
+    <div class="card"><h3>2. Produzir</h3><p>O app gera a narração com voz sintética e monta o vídeo com imagens de fundo e legendas.</p></div>
+    <div class="card"><h3>3. Publicar</h3><p>Depois da conferência, o vídeo é enviado ao TikTok (Login Kit e Content Posting API) e ao YouTube, só nas contas do desenvolvedor.</p></div>
   </div>
 </section>
 
-<hr>
-
-<section id="privacidade">
-  <h2>Política de Privacidade</h2>
-  <p class="data">Última atualização: 5 de novembro de 2026</p>
-  <h3>Dados que o app usa</h3>
-  <ul>
-    <li>Informações básicas da conta do TikTok autorizada (identificador, nome de exibição e foto de perfil), para confirmar em qual conta o vídeo será publicado.</li>
-    <li>Os tokens de acesso que o TikTok devolve depois da autorização, necessários para publicar.</li>
-    <li>Os próprios vídeos, títulos e legendas produzidos pelo desenvolvedor.</li>
-  </ul>
-  <h3>Onde ficam guardados</h3>
-  <p>Tudo fica no computador do desenvolvedor. O app não tem servidor próprio, não guarda dados em nuvem e não coleta dados de outras pessoas ou de espectadores.</p>
-  <h3>Compartilhamento</h3>
-  <p>Os dados não são vendidos nem compartilhados com terceiros. Eles só são enviados ao TikTok e ao YouTube no momento da publicação.</p>
-  <h3>Como apagar</h3>
-  <p>Para remover o acesso, revogue o app em “Segurança” → “Apps e serviços” no TikTok. Os tokens guardados no computador são apagados junto com a pasta de configuração do app.</p>
-  <h3>Menores</h3>
-  <p>O app não é destinado a menores de 18 anos e não coleta dados de crianças.</p>
-
-  <div class="en" lang="en">
-    <h3>Privacy Policy (English)</h3>
-    <p>The app uses only the authorized TikTok account's basic profile information (open ID, display name, avatar) to confirm the target account, the access tokens TikTok returns after authorization, and the developer's own videos, titles and captions. All data is stored locally on the developer's computer; there is no app server or cloud storage, and no data is collected from other users or viewers. Data is never sold or shared with third parties and is sent only to TikTok and YouTube when publishing. To remove access, revoke the app under Security → Apps and services in TikTok; locally stored tokens are deleted with the app's configuration folder. The app is not intended for anyone under 18.</p>
-  </div>
+<section id="tiktok">
+  <h2>Uso da integração com o TikTok</h2>
+  <ol>
+    <li>O desenvolvedor entra com a própria conta do TikTok pelo Login Kit e autoriza o app.</li>
+    <li>O app usa a Content Posting API para publicar o vídeo finalizado, respeitando a privacidade escolhida para cada publicação.</li>
+    <li>O acesso pode ser revogado a qualquer momento em Segurança → Apps e serviços, no TikTok.</li>
+  </ol>
+  <p style="color:var(--muted);max-width:44rem">O app não é aberto ao público: ninguém além do desenvolvedor cria conta ou publica por ele, e nenhum dado de espectadores é coletado.</p>
 </section>
+</main>
+
+<footer>
+  <a href="termos.html#termos">Termos de Uso</a> · <a href="termos.html#privacidade">Política de Privacidade</a>
+  <p>© 2026 Estúdio de Histórias.</p>
+</footer>
 </div>
 </body>
 </html>
